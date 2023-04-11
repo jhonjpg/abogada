@@ -37,6 +37,22 @@ Rosa Gutierrez & Asoc
       </nav>
 
 
+      <nav className="phoneNavbar">
+
+
+<div className="menu">
+<i class="bi bi-list"></i>
+</div>
+
+<h2 className="">
+
+Rosa Gutierrez & Asoc
+     
+       </h2>
+
+
+     </nav>
+
 
 
 
