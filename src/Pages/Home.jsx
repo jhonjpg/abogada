@@ -146,10 +146,10 @@ const Home = () => {
 
 <ul className="information">
 
-<li className=""> <div className="info"><i class="bi bi-house-down"></i> </div> <h6>Direccion</h6><p>licey al Medio santiago</p> </li>
-<li className="gmail"> <div className="info"><i class="bi bi-envelope-at-fill"></i></div> <h6>Email</h6><p>rosamargaritagutierrezporte <br />@gmail.com</p> </li>
-<li className=""> <div className="info"><i class="bi bi-telephone-fill"></i></div> <h6>Telefono</h6><p>809-858-5511</p> </li>
-<li className=""> <div className="info"><i class="bi bi-clock"></i></div> <h6>Horario</h6><p>lunes a Viernes <br /> 9:00 am a 5:00 pm</p> </li>
+<li className=""> <div className="info"><i className="bi bi-house-down"></i> </div> <h6>Direccion</h6><p>licey al Medio santiago</p> </li>
+<li className="gmail"> <div className="info"><i className="bi bi-envelope-at-fill"></i></div> <h6>Email</h6><p>rosamargaritagutierrezporte <br />@gmail.com</p> </li>
+<li className=""> <div className="info"><i className="bi bi-telephone-fill"></i></div> <h6>Telefono</h6><p>809-858-5511</p> </li>
+<li className=""> <div className="info"><i className="bi bi-clock"></i></div> <h6>Horario</h6><p>lunes a Viernes <br /> 9:00 am a 5:00 pm</p> </li>
 
 </ul>
 </div>

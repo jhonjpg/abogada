@@ -41,7 +41,7 @@ Rosa Gutierrez & Asoc
 
 
 <div className="menu">
-<i class="bi bi-list"></i>
+<i className="bi bi-list"></i>
 </div>
 
 <h2 className="">
