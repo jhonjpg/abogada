@@ -1,8 +1,52 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Navbar } from '../components/Navbar'
 import SliderReviews from '../components/SliderReviews'
 
 const Home = () => {
+
+
+  const [articulo, serArticulo] = useState(false);
+
+
+  const seeMore = () => {
+
+
+
+    serArticulo(!articulo)
+  }
+
+  const hideClass = `hide ${articulo ? "show" : ""}`
+
+
+
+  const [firstArticulo, serFirstArticulo] = useState(false);
+  const [secondArticulo, serSecondArticulo] = useState(false);
+   const [thirdArticulo, serThirdArticulo] = useState(false);
+
+
+
+  const watchMore = () => {
+    serFirstArticulo(!firstArticulo)
+  }
+
+
+  const watchSecond = () => {
+    serFirstArticulo(!firstArticulo)
+  }
+
+
+  const watchThird = () => {
+    serFirstArticulo(!firstArticulo)
+  }
+  const watch = `off ${firstArticulo ? "on" : ""}`
+
+
+  
+
+
+
+
+
   return (
 <main>
 <Navbar/>
@@ -10,9 +54,9 @@ const Home = () => {
 
 <section>
 
+<a id="home" href=""></a>
 
 <div className="frontPage">
-<a id="home" href=""></a>
 
 <div className="opacity ">
 
@@ -68,7 +112,8 @@ const Home = () => {
 
 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis magni illum officiis quia, perferendis natus! Recusandae ab sunt mollitia omnis nobis iste similique explicabo, repellat aperiam vero ut at debitis.</p>
 
-<button>Leer Mas</button>
+<p className={hideClass}> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos provident, officia vel voluptatum ab in nemo quae nostrum doloribus laborum magnam error. Esse repellat labore, quam dolor suscipit mollitia amet.</p>
+<button onClick={seeMore}>{articulo ? "Menos": "leer Mas"}</button>
 </div>
 
 
@@ -83,10 +128,14 @@ const Home = () => {
 
     <ul className="especialization">
 
-    <li className="card"> <h3><div className=""><span>C</span>ORPORATE LAW</div> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt itaque assumenda voluptatum hic consectetur in, numquam vero, dolores natus tempora porro quis provident. Hic facilis cumque porro maxime! Atque.</p> <button>Mas</button></h3></li>
-    <li className="card"> <h3><div className=""><span>C</span>ORPORATE LAW</div> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt itaque assumenda voluptatum hic consectetur in, numquam vero, dolores natus tempora porro quis provident. Hic facilis cumque porro maxime! Atque.</p> <button>Mas</button></h3></li>
-    <li className="card"> <h3><div className=""><span>C</span>ORPORATE LAW</div> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt itaque assumenda voluptatum hic consectetur in, numquam vero, dolores natus tempora porro quis provident. Hic facilis cumque porro maxime! Atque.</p> <button>Mas</button></h3></li>
-
+    <li className="card"> <h3><div className=""><span>C</span>ORPORATE LAW</div> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt itaque assumenda voluptatum hic consectetur in,Hic facilis cumque porro maxime! Atque.</p>
+     <p className={watch}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas facilis saepe sunt nisi aut odio animi in optio ut quis sequi, alias assumenda dolor esse repellendus. Ex, laboriosam atque.</p><button onClick={watchMore}>Mas</button></h3></li>
+     <li className="card"> <h3><div className=""><span>C</span>ORPORATE LAW</div> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt itaque assumenda voluptatum hic consectetur in,Hic facilis cumque porro maxime! Atque.</p>
+     <p className={watch}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas facilis saepe sunt nisi aut odio animi in optio ut quis sequi, alias assumenda dolor esse repellendus. Ex, laboriosam atque.</p><button onClick={watchSecond}>Mas</button></h3></li> <li className="card"> <h3><div className=""><span>C</span>ORPORATE LAW</div> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt itaque assumenda voluptatum hic consectetur in,Hic facilis cumque porro maxime! Atque.</p>
+     <p className={watch}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas facilis saepe sunt nisi aut odio animi in optio ut quis sequi, alias assumenda dolor esse repellendus. Ex, laboriosam atque.</p><button onClick={watchThird}>Mas</button></h3></li>
     </ul>
 </div>
 

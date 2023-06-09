@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Auth from './Routes/Auths'
 
 function App() {
