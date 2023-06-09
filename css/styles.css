@@ -77,6 +77,15 @@ button {
     border-radius: 10px;
     background-color: rgb(187 130 5);
     color: white;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
 
 .frontPage {
@@ -242,6 +251,7 @@ aside {
     border-radius: 0px;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 .secondPart {
