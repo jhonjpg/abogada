@@ -38,9 +38,9 @@ Rosa Gutierrez & Asoc
 
 
         <ul>
-          <li className="nav-item"> <a  href="#home"  >  Home</a></li>
+          <li className="nav-item"> <a  href="#home"  >  Inicio</a></li>
           <li className="nav-item"> <a href="#us"  >  Nosotros</a></li>
-          <li className="nav-item"> <a href="#reviews"  >  Reviews</a></li>
+          <li className="nav-item"> <a href="#reviews"  >  Reseñas</a></li>
           <li className="nav-item"> <a href="#contact" >  Contacto</a></li>
 
         <button>Consulta Gratis</button>
@@ -55,7 +55,9 @@ Rosa Gutierrez & Asoc
 
 
 <div className="menu" onClick={toggleMenu}> 
-<i className="bi bi-list"></i>
+
+{toggleOn ?  <i className="bi bi-x-lg"></i> : <i className="bi bi-list"></i>}
+
 </div>
 
 
@@ -67,20 +69,21 @@ Rosa Gutierrez & Asoc
        </h2>
 
 
-     </nav>
-
-
-     <div className={`togglingMenu ${toggleOn ? " active" : ""}`}>
+       <div className={`togglingMenu ${toggleOn ? " active" : ""}`}>
      <ul>
-          <li className="nav-item"> <a  href="#home"  >  Home</a></li>
+          <li className="nav-item"> <a  href="#home"  >  Inicio</a></li>
           <li className="nav-item"> <a href="#us"  >  Nosotros</a></li>
-          <li className="nav-item"> <a href="#reviews"  >  Reviews</a></li>
+          <li className="nav-item"> <a href="#reviews"  >  Reseñas</a></li>
           <li className="nav-item"> <a href="#contact" >  Contacto</a></li>
 
         <button>Consulta Gratis</button>
         </ul>
 
      </div>
+
+     </nav>
+
+
 
 
 

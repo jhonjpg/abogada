@@ -4,6 +4,7 @@
     text-decoration: none;
     color: #cacaca;
     scroll-behavior: smooth !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 main {
@@ -77,6 +78,7 @@ button {
     border-radius: 10px;
     background-color: rgb(187 130 5);
     color: white;
+    cursor: pointer;
 }
 
 .hide {
@@ -93,6 +95,40 @@ button {
 
 .on {
     display: block;
+    transition: 0.6s;
+    animation: slow 0.6s linear;
+}
+
+.offtwo {
+    display: none;
+}
+
+.ontwo {
+    display: block;
+    transition: 0.6s;
+    animation: slow 0.6s linear;
+}
+
+.offthree {
+    display: none;
+}
+
+.onthree {
+    display: block;
+    transition: 0.6s;
+    animation: slow 0.6s linear;
+}
+
+@keyframes slow {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+        height: auto;
+    }
+    to {
+        opacity: 1;
+        height: auto;
+    }
 }
 
 .frontPage {
@@ -288,7 +324,7 @@ aside {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 340px;
+    height: auto;
     gap: 10px;
 }
 
@@ -297,10 +333,10 @@ aside {
     flex-direction: column;
     justify-content: center;
     min-width: 180px;
-    height: 60%;
     border-radius: 30px;
     background: #ffffff;
     box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+    padding: 1em !important;
 }
 
 .card h3 {
@@ -357,6 +393,7 @@ h3 div span {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    margin-top: 30px
 }
 
 .consult h4 {
@@ -413,7 +450,7 @@ h3 div span {
 
 .slash {
     width: 80% !important;
-    height: 300px;
+    height: auto !important;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -521,7 +558,7 @@ input[type="submit"] {
 .contact {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     height: 200px;
     position: relative;
     bottom: 50px;
@@ -555,8 +592,15 @@ input[type="submit"] {
 
 .gmail {
     display: flex;
-    flex-shrink: 2;
+    width: 24%;
+    flex-grow: 3;
     font-size: 18px !important;
+    overflow: hidden;
+}
+
+.gmail p {
+    width: 90% !important;
+    height: 40px !important;
 }
 
 .contact li p {

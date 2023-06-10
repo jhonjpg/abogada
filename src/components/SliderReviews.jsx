@@ -72,10 +72,20 @@ const SliderReviews = () => {
 
 
 
-          resenas: ["Excelente servicio al cliente" , "El personal es muy amable y servicial.", "Los productos son de alta calidad.", "El ambiente es acogedor y agradable.", "El precio es razonable en comparación con otros lugares similares.", "La ubicación es conveniente y de fácil acceso.","Siempre hay promociones y descuentos disponibles." , "La comida es deliciosa y fresca.", "Los tiempos de espera son mínimos, incluso en horas pico.", "El lugar está muy bien decorado y diseñado.", "La rapidez y eficiencia del servicio son impresionantes.", "La variedad de opciones en el menú es genial, siempre hay algo nuevo por probar."]
+          resenas: ["El abogado García me brindó una excelente representación legal en mi caso de divorcio. Su profesionalismo y habilidad para negociar fueron fundamentales para llegar a un acuerdo justo y satisfactorio." , 
+          "Recurrí al abogado Martínez para un problema legal y quedé impresionado por su conocimiento y experiencia. Me guió a lo largo del proceso de manera clara y me ayudó a alcanzar el resultado deseado.",
+           "Contraté al abogado López para un caso de lesiones personales y su dedicación fue excepcional. Gracias a su habilidad para presentar mi caso de manera convincente, obtuve una compensación justa por mis pérdidas.", "La abogada Pérez me asistió en un caso de propiedad intelectual y su nivel de conocimiento en el tema fue impresionante. Su asesoramiento estratégico fue clave para proteger mis derechos de autor.", 
+           "El abogado Rodríguez me representó en un caso penal y su experiencia en el sistema legal fue evidente. Su aguda preparación y argumentación efectiva llevaron a un resultado favorable en mi defensa", 
+           "El abogado García es un profesional excepcional. Su dedicación y conocimiento legal me brindaron la confianza necesaria para resolver mi caso con éxito.","El abogado Castro es un defensor incansable de los derechos humanos. Su compromiso y pasión por la justicia me brindaron una representación sólida y una resolución exitosa." , "La abogada Ramírez es una profesional confiable y ética. Su experiencia en derecho familiar y su enfoque centrado en el cliente me brindaron resultados positivos en mi caso de custodia.", "La abogada Gómez demostró un profundo conocimiento en mi área legal. Su enfoque estratégico y habilidades de argumentación fueron cruciales para obtener un resultado favorable.", "El abogado Rodríguez es un defensor apasionado. Su tenacidad y compromiso con mi caso me brindaron un resultado favorable y justicia."
+           , "El abogado Torres es un experto en derecho empresarial. Su asesoramiento integral y su capacidad para anticipar y resolver problemas legales me ayudaron a proteger mi negocio.",
+            "Contratar al abogado López fue una excelente decisión. Su experiencia y perspicacia legal me guiaron a través de un proceso complejo y obtuvimos resultados exitosos."
+
+        ]
           
 
         }
+
+
 
 
     ]
@@ -105,11 +115,7 @@ const SliderReviews = () => {
 
 <div className="two">
 
-<p>Lorem ipsum dolor sit amet consectetur 
-    adipisicing elit. Deserunt incidunt itaque assumenda 
-    voluptatum hic consectetur in, numquam vero, dolores natus 
-    tempora porro quis provident. Hic facilis cumque porro maxime!
-     Atque.</p>
+<p>{immg[0].resenas[index]}</p>
      </div>
 
      </li>
